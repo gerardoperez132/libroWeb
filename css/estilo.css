@@ -1,0 +1,45 @@
+body {
+	font-family: Baskerville, Garamond , serif;
+	font-size:0.8em;
+	/*padding-top : 150px;
+	padding-right: 20px;
+	padding-left: 380px;*/
+}
+input[type="text"], select, textarea, input[type="password"], input[type="file"], input[type="radio"]{border:solid 1px #cccccc;background-color:#f2f2f2;}
+input[type="text"]:focus, select:focus, textarea:focus, field:focus, input[type="password"]:focus, input[type="file"]:focus,input[type="radio"]:focus{border:solid 1px #cc3300; background-color: #ffffff;}
+input,select,textarea {font-family: Baskerville, Garamond , serif;font-size:0.8em;margin:2px;font-weight:normal;}
+div {
+    margin-top: 12px;
+}
+div label.campo{
+  width: 25%;
+  float: left;
+}
+input[type=submit]{
+    margin-left:50px;
+    margin-top: 20px;
+}
+fieldset{
+    width: 30%;
+}
+label.error{
+    color:red;
+    background-image: url(img/error.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.error2{
+    background-color: #FF9F9F;
+    font-family: Baskerville, Garamond , serif;;
+}
+.error3{
+    text-align: center;
+}
+.ast{
+
+    font-size: large; 
+    color:red;
+}
+.titulo{
+    text-align: center
+}

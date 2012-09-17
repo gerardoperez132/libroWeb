@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color:#d8efc0;
+	font-family: Baskerville, Garamond , serif;
+	font-size:12px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-top:0px;
+	width:100%;
+}
+#magazine{
+	width:1152px;
+	height:752px;
+	float:left;
+}
+#magazine .turn-page{
+	background-color:#d8efc0;
+	background-size:100% 100%;
+}
+
+a {
+	text-decoration:none;
+	color:#555;
+}
+
+a:hover {
+	color:#999;
+	cursor:pointer;
+}
+
+#title {
+	font-family: Baskerville, Garamond, serif; 
+	font-size:36px; 
+	color:#FFF; 
+	font-weight:bold; 
+	padding-top:18px; 
+	width:1190px; 
+	text-align:right;
+	height:0px;
+}
+
+#sideBtnIcon1 {
+	height:402px; 
+	background-color:#444; 
+	padding-top:350px; 
+	text-align:center;
+}
+
+#sideBtnIcon2 {
+	height:402px; 
+	background-color:#444; 
+	padding-top:350px; 
+	text-align:center;
+}
+
+#pag {
+	float:left;
+}
+
+#controls {
+	margin-top:10px;
+	padding-left:10px;
+	width:170px;
+	background-color:#444;
+	display:block;
+	color:#FFF;
+	height:29px;
+	padding-top:6px;
+	margin-left:5px;
+}
+
+
+#submit {
+	background-image:url(../images/site/submit-bk.png); 
+	border-bottom-left-radius:5px; 
+	border-bottom-right-radius:5px; 
+	border-top-right-radius:5px; 
+	border-top-left-radius:5px; 
+	border:none; 
+	color:#FFF; 
+	padding-bottom:5px; 
+	padding-top:5px; 
+	padding-left:10px; 
+	padding-right:10px; 
+	font-size:12px;
+	cursor:pointer;
+}
+
+#testdiv {
+	width:600px; 
+	margin:0px auto; 
+	border:1px solid #d8efc0; 
+	padding:20px 25px 12px; 
+	background:#fff
+}
+
+ul {
+	list-style:none; 
+	margin-bottom:12px; 
+	padding:0
+}
+
+li {
+	font:14px Georgia,Verdana; 
+	margin-bottom:4px; 
+	padding:8px 10px 9px; 
+	border:1px solid #d8efc0; 
+	background:#eee; 
+	cursor:pointer
+}
+
+li:hover {
+	border:1px solid #bbb; 
+	background:#e3e3e3
+}
+
+.tbox {position:absolute; display:none; padding:14px 17px; z-index:900}
+.tinner {padding:15px; border-radius:5px; border-radius:5px; background:#fff url(images/preload.gif) no-repeat 50% 50%; border-right:1px solid #333; border-bottom:1px solid #333}
+.tmask {position:absolute; display:none; top:0px; left:0px; height:100%; width:100%; background:#000; z-index:800}
+.tclose {position:absolute; top:0px; right:0px; width:30px; height:30px; cursor:pointer; background:url(../images/close.png) no-repeat}
+.tclose:hover {background-position:0 -30px}
+
+#error {background:#ff6969; color:#fff; text-shadow:1px 1px #cf5454; border-right:1px solid #000; border-bottom:1px solid #000; padding:0}
+#error .tcontent {border:1px solid #ffb8b8; border-radius:5px; border-radius:5px}
+#success {background:#2ea125; color:#fff; text-shadow:1px 1px #1b6116; border-right:1px solid #000; border-bottom:1px solid #000; padding:0; border-radius:0; border-radius:0}
+#bluemask {background:#4195aa}
+#frameless {padding:0}
+#frameless .tclose {left:6px}

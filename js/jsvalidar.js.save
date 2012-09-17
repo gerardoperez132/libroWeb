@@ -1,0 +1,40 @@
+function Verificar() {
+
+  if(document.getElementById("formulario").nombre.value == "") {
+    strError ="Por favor indique su nombre";
+	alert(strError);
+    document.getElementById("formulario").nombre.focus();
+    return false;
+  }
+
+if(document.getElementById("formulario").rcorreo.value == "") {
+    strError ="Por favor indique su Correo";
+  alert(strError);
+    document.getElementById("formulario").rcorreo.focus();
+    return false;
+  }
+
+  var valnombre = document.getElementById("formulario").nombre.value.search("[^A-Za-z ]"); 
+  if(document.getElementById("formulario").nombre.value.length > 0 && valnombre >= 0) { 
+	strError = "Por favor indique su nombre correctamente"; 
+	alert(strError);
+	document.getElementById("formulario").nombre.focus();
+	return false;
+   }
+//////////////////////////////////////////////////////////////////////////////////////////
+  var valmensaje = document.getElementById("formulario").mensaje.value.search("[^A-Za-z ]"); 
+  if(document.getElementById("formulario").mensaje.value.length > 0 && valmensaje >= 0) { 
+[^A-Za-z\n\s]  strError = "No se aseptan caracteres especiales";
+  alert(strError);
+  document.getElementById("formulario").mensaje.focus();
+  return false;
+   }
+///////////////////////////////////////////////////////////////////////////////////////////
+  var b= /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,3})$/;
+  if (!b.test(document.getElementById("formulario").rcorreo.value)){
+   strError = "Introduzca un email válido";
+   alert(strError);
+   document.getElementById("formulario").rcorreo.focus();   
+   return false;
+  }
+}
